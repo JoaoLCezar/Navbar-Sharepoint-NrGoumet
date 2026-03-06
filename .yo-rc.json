@@ -1,0 +1,21 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": false,
+    "nodeVersion": "18.20.8",
+    "sdksVersions": {
+      "@microsoft/microsoft-graph-client": "3.0.2",
+      "@microsoft/teams-js": "2.24.0"
+    },
+    "version": "1.20.0",
+    "libraryName": "navbar-intranet",
+    "libraryId": "e6abc898-4b1f-4dac-8873-c9367149699f",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "navbar-intranet",
+    "solutionShortDescription": "navbar-intranet description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "extensionType": "ApplicationCustomizer"
+  }
+}

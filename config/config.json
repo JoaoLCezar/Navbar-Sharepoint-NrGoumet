@@ -1,0 +1,16 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "navbar-intranet-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/navbarIntranet/NavbarIntranetWebPart.js",
+          "manifest": "./src/webparts/navbarIntranet/NavbarIntranetWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {}
+}

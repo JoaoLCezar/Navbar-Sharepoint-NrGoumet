@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "navbar-intranet-client-side-solution",
+    "id": "f7a1b2c3-d4e5-4f6a-8b9c-0e1f2a3b4c5d",
+    "version": "1.0.3.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "f7a1b2c3-d4e5-4f6a-8b9c-0e1f2a3b4c5d"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "navbar-intranet description"
+      },
+      "longDescription": {
+        "default": "navbar-intranet description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "navbar-intranet Feature",
+        "description": "The feature that activates elements of the navbar-intranet solution.",
+        "id": "93dfc9d6-70ac-4b26-828d-2170e7f84e1a",
+        "version": "1.0.1.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/navbar-intranet.sppkg"
+  }
+}

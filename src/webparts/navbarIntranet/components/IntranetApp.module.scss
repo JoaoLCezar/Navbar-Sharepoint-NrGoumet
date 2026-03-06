@@ -1,0 +1,179 @@
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+
+$primary-color: #243e80;
+$secondary-color: #0097ce;
+$gray-50: #f8fafc;
+$gray-700: #334155;
+
+.intranet {
+  min-height: 80px;
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: block;
+  visibility: visible;
+  
+  * {
+    box-sizing: border-box;
+  }
+}
+
+// === NAVIGATION WRAPPER ===
+.navigationWrapper {
+  width: calc(100% - 20px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  background: $primary-color;
+  margin: 4px 10px 15px 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 49;
+  gap: 32px;
+  min-height: 60px;
+  visibility: visible;
+}
+
+// === LOGO ===
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  flex-shrink: 0;
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  .logoImage {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+  }
+}
+
+// === NAVIGATION ===
+.navigation {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  justify-content: center;
+  
+  ul {
+    display: flex;
+    align-items: center;
+    height: 54px;
+    gap: 32px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    position: relative;
+  }
+  
+  button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    height: 54px;
+    padding: 0 16px;
+    background: none;
+    border: none;
+    border-bottom: 3px solid transparent;
+    color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    transition: all 0.2s;
+    white-space: nowrap;
+    
+    &:hover {
+      color: white;
+      background-color: rgba(255, 255, 255, 0.15);
+      border-bottom-color: transparent;
+    }
+    
+    &.active {
+      color: white;
+      border-bottom-color: white;
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+  }
+}
+
+// === DROPDOWN MENU (SETORES & FORMULÁRIOS) ===
+.dropdownMenu {
+  position: relative;
+
+  button {
+    .chevronDown {
+      transition: transform 0.2s ease;
+    }
+
+    .chevronUp {
+      transform: rotate(180deg);
+      transition: transform 0.2s ease;
+    }
+  }
+}
+
+.dropdownContent {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 220px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 8px 0;
+  margin-top: 4px;
+  z-index: 100;
+  animation: slideDown 0.2s ease;
+
+  a {
+    display: block;
+    padding: 12px 20px;
+    color: $gray-700;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.15s;
+    border-left: 3px solid transparent;
+
+    &:hover {
+      background-color: $gray-50;
+      color: $primary-color;
+      border-left-color: $secondary-color;
+    }
+
+    &:first-child {
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+
+    &:last-child {
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+    }
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
