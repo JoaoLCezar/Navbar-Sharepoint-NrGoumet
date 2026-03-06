@@ -6,6 +6,7 @@ import {
   FileText, 
   Users, 
   Home,
+  Video,
   ChevronDown
 } from 'lucide-react';
 import { navegarPara, setores, formularios } from './IntranetConfig';
@@ -23,6 +24,7 @@ const IntranetApp: React.FC<IIntranetAppProps> = ({ context }) => {
   const siteUrl = context.pageContext.web.absoluteUrl;
   const homeUrl = siteUrl;
   const centralDocumentosUrl = `${siteUrl}/SitePages/CentralDeDocumentos.aspx`;
+  const videotecaUrl = `${siteUrl}/SitePages/Videoteca.aspx`;
 
   return (
     <div className={styles.intranet}>
@@ -42,6 +44,11 @@ const IntranetApp: React.FC<IIntranetAppProps> = ({ context }) => {
             <li>
               <button onClick={() => navegarPara(centralDocumentosUrl)}>
                 <FileText size={16} /> Central de Documentos
+              </button>
+            </li>
+            <li>
+              <button onClick={() => navegarPara(videotecaUrl)}>
+                <Video size={16} /> Videoteca
               </button>
             </li>
             <li 

@@ -177,3 +177,23 @@ $gray-700: #334155;
     transform: translateY(0);
   }
 }
+
+// === OCULTAR NAVBAR PADRÃO DO SHAREPOINT (mantém botões de edição) ===
+:global {
+  // Esconde o cabeçalho superior (logo SharePoint, busca, notificações)
+  #spSiteHeader {
+    display: none !important;
+  }
+  
+  // Esconde a app bar
+  #sp-appBar {
+    display: none !important;
+  }
+  
+  // Esconde apenas a navegação horizontal (hub navigation)
+  div[data-automationid="HorizontalNav"],
+  div[class*="hubNav"],
+  .ms-HorizontalNav {
+    display: none !important;
+  }
+}
