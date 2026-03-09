@@ -53,9 +53,34 @@ $gray-700: #334155;
   }
 
   .logoImage {
-    height: 60px;
+    height: 54px;
     width: auto;
     object-fit: contain;
+  }
+
+  .logoText {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+  }
+
+  .logoTitle {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    line-height: 1.1;
+    color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+
+  }
+
+  .logoSubtitle {
+    margin-top: 2px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.85);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
   }
 }
 

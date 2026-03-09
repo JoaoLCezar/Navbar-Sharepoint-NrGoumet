@@ -23,7 +23,7 @@ const IntranetApp: React.FC<IIntranetAppProps> = ({ context }) => {
   // URL base do site
   const siteUrl = context.pageContext.web.absoluteUrl;
   const homeUrl = siteUrl;
-  const centralDocumentosUrl = `${siteUrl}/SitePages/CentralDeDocumentos.aspx`;
+  const centralDocumentosUrl = `${siteUrl}/Central%20de%20Documentos`;
   const videotecaUrl = `${siteUrl}/SitePages/Videoteca.aspx`;
 
   return (
@@ -32,6 +32,10 @@ const IntranetApp: React.FC<IIntranetAppProps> = ({ context }) => {
       <div className={styles.navigationWrapper}>
         <div className={styles.logo} onClick={() => navegarPara(homeUrl)}>
           <img src={logoNRGourmet} alt="NR Gourmet" className={styles.logoImage} />
+          <div className={styles.logoText}>
+            <span className={styles.logoTitle}>NR GOURMET</span>
+            <span className={styles.logoSubtitle}>INTRANET</span>
+          </div>
         </div>
         
         <nav className={styles.navigation}>
